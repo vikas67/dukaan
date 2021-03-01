@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.editcategory.EditCategoryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="90dp"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/recycle">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/title_addnewp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:id="@+id/addnew"
+        android:backgroundTint="@color/red"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:shadowRadius="10"
+        android:fontFamily="@font/montserrat_medium"
+        />
+
+
+</RelativeLayout>

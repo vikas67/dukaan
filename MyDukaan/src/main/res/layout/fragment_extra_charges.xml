@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ExtraChargesFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/upperCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/GuidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/GuidelineStart"
+        app:layout_constraintTop_toTopOf="@+id/GuidelineTop">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/heading1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delivery Charges"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="@+id/GuidelineStartInner"
+                app:layout_constraintRight_toRightOf="@+id/GuidelineEndInner"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DeliveryChargeTextinput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="@+id/GuidelineStartInner"
+                app:layout_constraintRight_toRightOf="@+id/GuidelineEndInner"
+                app:layout_constraintTop_toBottomOf="@+id/heading1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Delivery charge per ordere *"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/FreeDeliveryTextinput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="@+id/GuidelineStartInner"
+                app:layout_constraintRight_toRightOf="@+id/GuidelineEndInner"
+                app:layout_constraintTop_toBottomOf="@+id/DeliveryChargeTextinput">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Free Delivery above *"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/GuidelineTopInner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/GuidelineStartInner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="15dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/GuidelineEndInner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="15dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/GstCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/GuidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/GuidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/upperCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/GstText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="GST"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/CreateExtraChargeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_500"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:textColor="@color/black"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:text="Create extras charge"
+        app:layout_constraintEnd_toStartOf="@+id/GuidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/GuidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/GstCard" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_design_coupon"
+        android:text="Save change"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/GuidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/GuidelineStart" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="15dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="15dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

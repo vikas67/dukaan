@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="280sp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_header_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/rboto_medium"
+                android:gravity="center"
+                android:text="Change_status"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_cancal"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="5sp"
+                android:padding="3sp"
+                android:src="@drawable/cencal_object" />
+
+        </LinearLayout>
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/rv_dialog"/>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/today"
+        android:title="@string/today"
+        app:showAsAction="never"
+        android:icon="@null" />
+    <item
+        android:id="@+id/yesterday"
+        android:title="@string/yesterday"
+        app:showAsAction="never"
+        android:icon="@null"/>
+    <item
+        android:id="@+id/week"
+        android:title="@string/this_week"
+        app:showAsAction="never"
+        android:icon="@null"/>
+    <item
+        android:id="@+id/month"
+        android:title="@string/this_month"
+        app:showAsAction="never"
+        android:icon="@null"/>
+    <item
+        android:id="@+id/life_time"
+        android:title="@string/life_time"
+        app:showAsAction="never"
+        android:icon="@null"/>
+</menu>

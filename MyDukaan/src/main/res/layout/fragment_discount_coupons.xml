@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DiscountCouponsFragment">
+
+
+
+
+    <ImageView
+        android:id="@+id/ImageDiscountCoupons"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Get more sales with coupons"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/GuidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/GuidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/ImageDiscountCoupons" />
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Get more sales with coupons"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/GuidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/GuidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/heading1" />
+
+    <TextView
+        android:id="@+id/heading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Get more sales with coupons"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/GuidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/GuidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/heading2" />
+
+
+    <Button
+        android:id="@+id/CreateCouponBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_design_coupon"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:text="Create a coupon"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/GuidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/GuidelineStart" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="15dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="15dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
