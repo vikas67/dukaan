@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="field_required">هذه الخانة مطلوبه</string>
+    <string name="email_formate">يرجى إدخال البريد الإلكتروني الصحيح</string>
+    <string name="psw_short">كلمة المرور هذه قصيرة جدًا</string>
+    <string name="check_internet">يرجى التحقق من الإنترنت</string>
+    <string name="welcome_back">مرحبا بعودتك!</string>
+    <string name="sign_in_to_countinue">تسجيل الدخول للمتابعة</string>
+    <string name="mobile_number">رقم الهاتف الجوال</string>
+    <string name="password">كلمه السر</string>
+    <string name="forgot_your_password">نسيت رقمك السري؟</string>
+    <string name="don_t_have_an_account">لا يوجد لديك حساب؟</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="otp_verification">التحقق من OTP</string>
+    <string name="enter_the_otp_you_received_on">أدخل كلمة المرور لمرة واحدة التي تلقيتها على</string>
+    <string name="resend_otp">إعادة إرسال  OTP</string>
+    <string name="otp_four_digit">الرجاء إدخال 4 أرقام OTP</string>
+</resources>

@@ -2,13 +2,15 @@
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#2196F3</color>
-    <color name="purple_700">#0D5E9F</color>
+    <color name="purple_700">#18b9ff</color>
     <color name="teal_200">#49A84D</color>
     <color name="teal_700">#0A5B9C</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#D6D2D2</color>
     <color name="light_gray">#EDE9E9</color>
+    <color name="edit_botton_line">#0BA2DD</color>
+    <color name="edit_tint_color">#EAF4F5</color>
 
     <color name="light_blue">#EAF6FF</color>
     <color name="light_red">#F4E7E6</color>
@@ -28,5 +30,9 @@
     <color name="selected_row_color">#E2E2E2</color>
     <color name="text_color_blue_black">#00233d</color>
     <color name="text_color_black">#00233d</color>
+    <color name="market_back">#E5E5E5</color>
+    <color name="blue_color">#4C9DFF</color>
+    <color name="light_black">#808080</color>
+    <color name="light_blue1">#4C9DFF</color>
 
 </resources>

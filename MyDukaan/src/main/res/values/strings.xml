@@ -8,7 +8,7 @@
     <string name="title_support">Support</string>
     <string name="title_edit_business_detail">Edit business details</string>
     <string name="title_refer">Refer &amp; Earn</string>
-    <string name="title_share">Share Dukaan App</string>
+    <string name="title_share">Share Ginny App</string>
     <string name="title_pc">Dukaan For PC</string>
     <string name="title_Lock">Lockscreen Notification </string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -31,7 +31,7 @@
 
 
     <string name="title_WhatsApp">WhatsApp Chat Support</string>
-    <string name="title_Use">How to use Dukaan App</string>
+    <string name="title_Use">How to use Ginny App</string>
     <string name="title_privacy">Privacy Policy</string>
     <string name="title_rate">Rate Us</string>
     <string name="title_signout">Sign Out</string>
@@ -143,9 +143,71 @@
     <string name="Please_Check_Internet_Connection">Please Check Internet Connection</string>
     <string name="Something_worg_please_try_again">Server Internal Error</string>
     <string name="description">Description</string>
+    <string name="marketing_ndesigns">Marketing <br />Designs</string>
+
 
     <string-array name="action">
         <item>Delivered</item>
         <item>Cancel</item>
     </string-array>
+
+
+    <!--
+            My Ginny
+    -->
+    <string name="field_required">This fiels is required</string>
+    <string name="email_formate">Please enter a valid email</string>
+    <string name="psw_short">This password is too short</string>
+    <string name="check_internet">Please Check Internet</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="sign_in_to_countinue">Sign in to countinue</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_the_otp_you_received_on">Enter the OTP you received on</string>
+    <string name="resend_otp">RESEND OTP </string>
+    <string name="otp_four_digit">Please enter 4 digits OTP</string>
+
 </resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

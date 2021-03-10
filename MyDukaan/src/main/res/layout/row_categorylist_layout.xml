@@ -43,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:fontFamily="@font/montserrat_regular"
-                        android:text="Apple"/>
+                        android:text="Fresh Meat &amp; Fish"/>
 
                     <TextView
                         android:layout_marginTop="10dp"

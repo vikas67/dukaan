@@ -22,6 +22,9 @@ import com.example.mydukaan.R;
 import com.example.mydukaan.activity.DashboardActivity;
 import com.example.mydukaan.activity.EditBusinessDetailActivity;
 import com.example.mydukaan.activity.Login;
+import com.example.mydukaan.activity.ginnyActivity.ginny_main_activity.GinneyMainActivity;
+import com.example.mydukaan.activity.ginnyActivity.ginny_main_activity.GinnyHomeActivity;
+import com.example.mydukaan.activity.ginnyActivity.welcome.WelcomeActivity;
 import com.example.mydukaan.databinding.AccountFragmentBinding;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -78,6 +81,12 @@ public class AccountFragment extends Fragment {
             }else {
                 SnackbarMessge(getString(R.string.w_off), binding.getRoot());
             }
+        });
+        binding.privacyPolicy.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext() , WelcomeActivity.class));
+        });
+        binding.RateUs.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext() , GinnyHomeActivity.class));
         });
     }
 

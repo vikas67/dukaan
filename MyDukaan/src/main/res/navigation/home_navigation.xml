@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/homeGinnyFragment">
+
+    <fragment
+        android:id="@+id/homeGinnyFragment"
+        android:name="com.example.mydukaan.fragment.ginny_fragment.home.HomeGinnyFragment"
+        android:label="home_ginny_fragment"
+        tools:layout="@layout/home_ginny_fragment" />
+</navigation>

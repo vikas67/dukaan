@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -317,6 +316,7 @@
                     android:orientation="horizontal"
                     android:weightSum="3"
                     android:id="@+id/pc"
+                    android:visibility="gone"
                     android:layout_margin="10dp"
                     android:layout_height="wrap_content">
 
@@ -520,6 +520,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/privacyPolicy"
                         android:layout_width="wrap_content"
                         android:layout_weight="2.6"
                         android:gravity="center_vertical"
@@ -558,6 +559,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/RateUs"
                         android:layout_width="wrap_content"
                         android:layout_weight="2.6"
                         android:gravity="center_vertical"

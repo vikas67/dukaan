@@ -41,9 +41,9 @@ public class ManageFragment extends Fragment {
             navController.navigate(R.id.action_manageFragment_to_marketingDesignsFragment);
         });
 
-        binding.onlinePaymentCrd.setOnClickListener(v -> {
-            navController.navigate(R.id.action_manageFragment_to_onlinePaymentFragment);
-        });
+//        binding.onlinePaymentCrd.setOnClickListener(v -> {
+//            navController.navigate(R.id.action_manageFragment_to_onlinePaymentFragment);
+//        });
 
         binding.discountCard.setOnClickListener(v -> {
             navController.navigate(R.id.action_manageFragment_to_discountCouponsFragment);

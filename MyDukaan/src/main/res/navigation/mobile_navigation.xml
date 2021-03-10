@@ -220,4 +220,9 @@
         android:name="com.example.mydukaan.fragment.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/marketFragment"
+        android:name="com.example.mydukaan.fragment.ginny_fragment.market.MarketFragment"
+        android:label="Market"
+        tools:layout="@layout/market_fragment" />
 </navigation>

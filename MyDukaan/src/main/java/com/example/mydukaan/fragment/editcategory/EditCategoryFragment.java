@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,6 +20,7 @@ import com.example.mydukaan.R;
 import com.example.mydukaan.activity.DashboardActivity;
 import com.example.mydukaan.adapter.ProductListAdapter;
 import com.example.mydukaan.databinding.FragmentEditCategoryBinding;
+import com.example.mydukaan.fragment.product.ProductListViewModel;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -27,6 +29,7 @@ public class EditCategoryFragment extends Fragment {
 
 
     FragmentEditCategoryBinding binding;
+    ProductListViewModel productListViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,7 +51,12 @@ public class EditCategoryFragment extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         binding.recycle.setLayoutManager(linearLayoutManager);
-        binding.recycle.setAdapter(new ProductListAdapter());
+
+        productListViewModel = new ViewModelProvider(requireActivity()).get(ProductListViewModel.class);
+        productListViewModel.getProducts().observe(requireActivity() , productLists -> {
+            binding.recycle.setAdapter(new ProductListAdapter(productLists));
+        });
+
 
     }
 
