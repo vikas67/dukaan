@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manage_navigation"
+    app:startDestination="@+id/manageFragment">
+
+    <fragment
+        android:id="@+id/manageFragment"
+        android:name="com.example.mydukaan.fragment.ui.Manage.ManageFragment"
+        android:label="Manage Store"
+        tools:layout="@layout/fragment_manage" >
+        <action
+            android:id="@+id/action_manageFragment_to_marketingDesignsFragment"
+            app:destination="@id/marketingFragment" />
+        <action
+            android:id="@+id/action_manageFragment_to_onlinePaymentFragment"
+            app:destination="@id/onlinePaymentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_manageFragment_to_discountCouponsFragment"
+            app:destination="@id/discountCouponsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_manageFragment_to_myCustomersFragment"
+            app:destination="@id/myCustomersFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_manageFragment_to_storeQrCodeFragment"
+            app:destination="@id/storeQrCodeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_manageFragment_to_extraChargesFragment"
+            app:destination="@id/extraChargesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_manageFragment_to_marketingFragment"
+            app:destination="@id/marketingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/onlinePaymentFragment"
+        android:name="com.example.mydukaan.fragment.OnlinePaymentFragment"
+        android:label="Online Payment"
+        tools:layout="@layout/fragment_online_payment" />
+    <fragment
+        android:id="@+id/discountCouponsFragment"
+        android:name="com.example.mydukaan.fragment.DiscountCouponsFragment"
+        android:label="Discount Coupons"
+        tools:layout="@layout/fragment_discount_coupons" >
+        <action
+            android:id="@+id/action_discountCouponsFragment_to_createCouponFragment"
+            app:destination="@id/createCouponFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/myCustomersFragment"
+        android:name="com.example.mydukaan.fragment.MyCustomersFragment"
+        android:label="fragment_my_customers"
+        tools:layout="@layout/fragment_my_customers" />
+    <fragment
+        android:id="@+id/storeQrCodeFragment"
+        android:name="com.example.mydukaan.fragment.StoreQrCodeFragment"
+        android:label="fragment_store_qr_code"
+        tools:layout="@layout/fragment_store_qr_code" />
+    <fragment
+        android:id="@+id/extraChargesFragment"
+        android:name="com.example.mydukaan.fragment.ExtraChargesFragment"
+        android:label="Extra Charges"
+        tools:layout="@layout/fragment_extra_charges" />
+    <fragment
+        android:id="@+id/marketingFragment"
+        android:name="com.example.mydukaan.fragment.MarketingFragment"
+        android:label="Marketing"
+        tools:layout="@layout/fragment_marketing" />
+
+    <fragment
+        android:id="@+id/createCouponFragment"
+        android:name="com.example.mydukaan.fragment.CreateCouponFragment"
+        android:label="fragment_create_coupon"
+        tools:layout="@layout/fragment_create_coupon" />
+
+</navigation>

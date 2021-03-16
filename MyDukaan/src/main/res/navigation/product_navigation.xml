@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_navigation"
+    app:startDestination="@+id/productFragment">
+
+
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.mydukaan.fragment.product.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_editProductFragment"
+            app:destination="@id/editProductFragment" />
+        <action
+            android:id="@+id/action_productFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_productFragment_to_addNewCategoryFragment"
+            app:destination="@id/addNewCategoryFragment" />
+        <action
+            android:id="@+id/action_productFragment_to_editCategoryFragment"
+            app:destination="@id/editCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProductFragment"
+        android:name="com.example.mydukaan.fragment.editproducts.EditProductFragment"
+        android:label="fragment_edit_product"
+        tools:layout="@layout/fragment_edit_product" >
+        <action
+            android:id="@+id/action_editProductFragment_to_addVarientsFragment"
+            app:destination="@id/addVarientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.mydukaan.fragment.addproducts.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" >
+        <action
+            android:id="@+id/action_addProductFragment_to_chooseCategoryFragment"
+            app:destination="@id/chooseCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseCategoryFragment"
+        android:name="com.example.mydukaan.fragment.choosecategory.ChooseCategoryFragment"
+        android:label="fragment_choose_category"
+        tools:layout="@layout/fragment_choose_category" >
+        <action
+            android:id="@+id/action_chooseCategoryFragment_to_editProductFragment"
+            app:destination="@id/editProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVarientsFragment"
+        android:name="com.example.mydukaan.fragment.varients.AddVarientsFragment"
+        android:label="fragment_add_varients"
+        tools:layout="@layout/fragment_add_varients" />
+    <fragment
+        android:id="@+id/addNewCategoryFragment"
+        android:name="com.example.mydukaan.fragment.addcategory.AddNewCategoryFragment"
+        android:label="fragment_add_new_category"
+        tools:layout="@layout/fragment_add_new_category" />
+    <fragment
+        android:id="@+id/editCategoryFragment"
+        android:name="com.example.mydukaan.fragment.editcategory.EditCategoryFragment"
+        android:label="fragment_edit_category"
+        tools:layout="@layout/fragment_edit_category" >
+        <action
+            android:id="@+id/action_editCategoryFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+    </fragment>
+
+</navigation>

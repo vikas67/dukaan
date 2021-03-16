@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/product_round_corner"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:id="@+id/top"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Order #985547"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="25px"
+            android:textColor="@color/light_black"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Today, 11:05 AM"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="25px"
+            android:textColor="@color/light_black"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/middle"
+        app:layout_constraintTop_toBottomOf="@id/top"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:background="@drawable/safe_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            android:layout_height="80dp"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Microsoft Surface"
+                android:fontFamily="@font/lato_semi_bold"
+                android:textSize="25px"
+                android:textColor="@color/semi_light_black"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="No. of items : 1"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="25px"
+                android:textColor="@color/light_black"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Price : Rs. 1,500"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="20px"
+                android:textColor="@color/semi_light_black"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/market_back"
+            android:fontFamily="@font/lato_regular"
+            android:text="COD"
+            android:id="@+id/button"
+            android:textColor="@color/semi_light_black"
+            android:textSize="20px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/middle"
+        android:background="@color/very_light_gray"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="13dp"
+        android:id="@+id/bottom"
+        app:layout_constraintTop_toBottomOf="@id/middle"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Accepted"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="25px"
+            android:textColor="@color/light_black"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Details"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="25px"
+                android:textColor="@color/light_black"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/light_gray_right_arrow"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

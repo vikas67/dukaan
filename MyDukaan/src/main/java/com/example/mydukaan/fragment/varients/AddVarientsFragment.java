@@ -74,14 +74,14 @@ public class AddVarientsFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        new DashboardActivity().HideBottomNavigation();
+//        new DashboardActivity().HideBottomNavigation();
 
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        new DashboardActivity().ShowBottomNavigation();
+//        new DashboardActivity().ShowBottomNavigation();
     }
 
 }

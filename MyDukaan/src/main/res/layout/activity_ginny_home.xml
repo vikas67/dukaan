@@ -3,18 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".activity.ginnyActivity.ginny_main_activity.GinnyHomeActivity">
 
 
     <include
+        android:id="@+id/app_bar_main"
         layout="@layout/app_bar_main1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="start" />
+        android:layout_gravity="start"
+        app:headerLayout="@layout/sidebar_header_layout"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/gray"
+        app:menu="@menu/sidebar_menu" />
+
+
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -24,6 +24,8 @@ import com.example.mydukaan.activity.EditBusinessDetailActivity;
 import com.example.mydukaan.activity.Login;
 import com.example.mydukaan.activity.ginnyActivity.ginny_main_activity.GinneyMainActivity;
 import com.example.mydukaan.activity.ginnyActivity.ginny_main_activity.GinnyHomeActivity;
+import com.example.mydukaan.activity.ginnyActivity.otp.OtpActivity;
+import com.example.mydukaan.activity.ginnyActivity.signup.SignupActivity;
 import com.example.mydukaan.activity.ginnyActivity.welcome.WelcomeActivity;
 import com.example.mydukaan.databinding.AccountFragmentBinding;
 import com.google.android.material.snackbar.Snackbar;
@@ -68,6 +70,23 @@ public class AccountFragment extends Fragment {
         binding.language.setOnClickListener(v -> {
             navController.navigate(R.id.action_navigation_account_to_changeLanguageFragment);
         });
+        binding.Login1.setOnClickListener(v -> {
+            navController.navigate(R.id.loginFragment2);
+        });
+
+        binding.sihn.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext() , SignupActivity.class));
+        });
+
+        binding.product.setOnClickListener(v -> {
+            navController.navigate(R.id.productFragment);
+        });
+        binding.manage.setOnClickListener(v -> {
+            navController.navigate(R.id.manageFragment);
+        });
+        binding.dashboard.setOnClickListener(v -> {
+            navController.navigate(R.id.navigation_home);
+        });
         binding.pc.setOnClickListener(v -> {
             ForPC();
         });
@@ -82,11 +101,18 @@ public class AccountFragment extends Fragment {
                 SnackbarMessge(getString(R.string.w_off), binding.getRoot());
             }
         });
-        binding.privacyPolicy.setOnClickListener(v -> {
+//        binding.privacyPolicy.setOnClickListener(v -> {
+//            startActivity(new Intent(requireContext() , WelcomeActivity.class));
+//        });
+//        binding.RateUs.setOnClickListener(v -> {
+//            startActivity(new Intent(requireContext() , GinnyHomeActivity.class));
+//        });
+        binding.Login2.setOnClickListener(v -> {
             startActivity(new Intent(requireContext() , WelcomeActivity.class));
         });
-        binding.RateUs.setOnClickListener(v -> {
-            startActivity(new Intent(requireContext() , GinnyHomeActivity.class));
+
+        binding.otp.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext() , OtpActivity.class));
         });
     }
 

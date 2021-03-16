@@ -36,7 +36,7 @@ public class DiscountCouponsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        new DashboardActivity().HideBottomNavigation();
+//        new DashboardActivity().HideBottomNavigation();
 
         navController = Navigation.findNavController(view);
 

@@ -57,7 +57,7 @@ public class ManageFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        new DashboardActivity().ShowBottomNavigation();
+//        new DashboardActivity().ShowBottomNavigation();
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
     }
 }

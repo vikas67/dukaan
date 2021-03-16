@@ -97,10 +97,10 @@ public class WelcomeActivity extends AppCompatActivity implements EasyPermission
         RequestMultiplePermission();
 
 
-        if (sessionManage.getUserDetails().get("verify_user") != null) {
-            startActivity(new Intent(WelcomeActivity.this, GinneyMainActivity.class));
-            finish();
-        }
+//        if (sessionManage.getUserDetails().get("verify_user") != null) {
+//            startActivity(new Intent(WelcomeActivity.this, GinneyMainActivity.class));
+//            finish();
+//        }
 
 
 

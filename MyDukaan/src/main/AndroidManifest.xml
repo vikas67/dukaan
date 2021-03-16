@@ -21,7 +21,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyDukaan"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.ginnyActivity.ginny_main_activity.GinnyHomeActivity"></activity>
+        <activity android:name=".activity.ProductActivity"></activity>
+        <activity android:name=".activity.ginnyActivity.ManageActivity" />
+        <activity android:name=".activity.ginnyActivity.OpenFragmentActivity" />
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.ginnyActivity.ginny_main_activity.GinnyHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity.ginnyActivity.ginny_main_activity.GinneyMainActivity"
             android:theme="@style/MyGinnyThem">
@@ -43,20 +53,14 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".activity.ginnyActivity.signup.SignupActivity" />
-        <activity android:name=".activity.ginnyActivity.otp.OtpActivity"></activity>
-        <activity android:name=".activity.ginnyActivity.welcome.WelcomeActivity"></activity>
+        <activity android:name=".activity.ginnyActivity.otp.OtpActivity" />
+        <activity android:name=".activity.ginnyActivity.welcome.WelcomeActivity" />
         <activity android:name=".activity.EditBusinessDetailActivity" />
         <activity android:name=".activity.Login" />
         <activity android:name=".activity.Home" />
         <activity
             android:name=".activity.DashboardActivity"
-            android:label="@string/title_activity_dashboard">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="@string/title_activity_dashboard" />
 
         <uses-library
             android:name="org.apache.http.legacy"

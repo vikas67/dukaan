@@ -35,7 +35,7 @@ public class AddNewCategoryFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        new DashboardActivity().HideBottomNavigation();
+//        new DashboardActivity().HideBottomNavigation();
     }
 
 }

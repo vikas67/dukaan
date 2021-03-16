@@ -78,10 +78,10 @@ public class MarketRepo {
 
     private void fakeListSilder() {
         List<SilderList> silderLists = new ArrayList<>();
-        silderLists.add(new SilderList("https://reapp.com.gh/wp-content/uploads/2018/03/nk.jpeg"));
-        silderLists.add(new SilderList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png"));
-        silderLists.add(new SilderList("https://reapp.com.gh/wp-content/uploads/2018/03/nk.jpeg"));
-        silderLists.add(new SilderList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png"));
+        silderLists.add(new SilderList("https://images-eu.ssl-images-amazon.com/images/G/31/img20/Smallappliances/SA_SummerStore/2021_summer/hero_1500x300_2.jpg"));
+        silderLists.add(new SilderList("https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/LA/Reshma_LA/SUMMER_FEST-2021/0Summer-Appliances-Carnival---12th---14th-Feb_1500x300_1.jpg"));
+        silderLists.add(new SilderList("https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2020/img/Home_Improvement/XCM_Manual_1222330_1159608_IN_in_home_improvement_home_improvement_3075237_1500x300_null_en_IN.jpg"));
+        silderLists.add(new SilderList("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/BAU/Storage/XCM_Manual_1221589_1154216_IN_IN_Home_Storage1_BAU_2db16745_0197_4758_9f31_dff1033d139a_1500x250_null_en_IN._CB432545016_.jpg"));
         listMutableLiveData.setValue(silderLists);
     }
 

@@ -71,7 +71,7 @@ public class EditCategoryFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        new DashboardActivity().HideBottomNavigation();
+//        new DashboardActivity().HideBottomNavigation();
     }
 
 

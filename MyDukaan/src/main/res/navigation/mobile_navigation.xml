@@ -3,14 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
-    <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.mydukaan.fragment.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
+    app:startDestination="@+id/navigation_account">
 
     <fragment
         android:id="@+id/navigation_account"
@@ -27,6 +20,14 @@
             android:id="@+id/action_navigation_account_to_changeLanguageFragment"
             app:destination="@id/changeLanguageFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mydukaan.fragment.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+
     <fragment
         android:id="@+id/manageFragment"
         android:name="com.example.mydukaan.fragment.ui.Manage.ManageFragment"
@@ -122,11 +123,11 @@
         android:name="com.example.mydukaan.fragment.CreateCouponFragment"
         android:label="fragment_create_coupon"
         tools:layout="@layout/fragment_create_coupon" />
-    <fragment
-        android:id="@+id/orderDashboardFragment"
-        android:name="com.example.mydukaan.fragment.ui.dashboard.OrderDashboardFragment"
-        android:label="fragment_order_dashboard"
-        tools:layout="@layout/fragment_order_dashboard" />
+<!--    <fragment-->
+<!--        android:id="@+id/orderDashboardFragment"-->
+<!--        android:name="com.example.mydukaan.fragment.ui.dashboard.OrderDashboardFragment"-->
+<!--        android:label="fragment_order_dashboard"-->
+<!--        tools:layout="@layout/fragment_order_dashboard" />-->
     <fragment
         android:id="@+id/regerEarnFragment"
         android:name="com.example.mydukaan.fragment.referearn.RegerEarnFragment"
@@ -225,4 +226,22 @@
         android:name="com.example.mydukaan.fragment.ginny_fragment.market.MarketFragment"
         android:label="Market"
         tools:layout="@layout/market_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_signup"
+        android:name="com.example.mydukaan.persionalinfo.PersionalInfoFragment"
+        android:label="Market"
+        tools:layout="@layout/fragment_persional_info" />
+
+    <activity
+        android:id="@+id/navigation_ginnyhome"
+        android:name="com.example.mydukaan.activity.ginnyActivity.ginny_main_activity.GinnyHomeActivity"
+        android:label="Market"
+        tools:layout="@layout/activity_ginny_home" />
+
+    <activity
+        android:id="@+id/navigation_ginnymain"
+        android:name="com.example.mydukaan.activity.ginnyActivity.ginny_main_activity.GinneyMainActivity"
+        android:label="Market"
+        tools:layout="@layout/activity_ginney_main" />
 </navigation>

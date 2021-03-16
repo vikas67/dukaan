@@ -33,6 +33,15 @@
     <color name="market_back">#E5E5E5</color>
     <color name="blue_color">#4C9DFF</color>
     <color name="light_black">#808080</color>
-    <color name="light_blue1">#4C9DFF</color>
+    <color name="semi_light_black">#4C4C4D</color>
+    <color name="light_blue1">#ACD2FF</color>
+    <color name="sky_blue">#89BCFF</color>
+    <color name="very_light_gray">#E6E6E6</color>
+    <color name="very_light_red">#FF7F7F</color>
+    <color name="very_light_green">#CBFFCB</color>
+
+
+
+
 
 </resources>
