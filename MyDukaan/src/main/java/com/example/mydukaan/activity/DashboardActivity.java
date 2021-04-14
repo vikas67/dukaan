@@ -36,6 +36,7 @@ public class DashboardActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
         NavigationUI.setupActionBarWithNavController(this, navController);
         navController.navigate(R.id.navigation_account);
+
         binding.navView.getMenu().findItem(R.id.action_fifth_item).setChecked(true);
         binding.navView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {

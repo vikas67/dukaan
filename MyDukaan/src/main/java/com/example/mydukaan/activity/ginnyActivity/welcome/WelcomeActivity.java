@@ -13,18 +13,16 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.mydukaan.R;
-import com.example.mydukaan.activity.DashboardActivity;
 import com.example.mydukaan.activity.ginnyActivity.ginny_main_activity.GinneyMainActivity;
-import com.example.mydukaan.activity.ginnyActivity.otp.OtpActivity;
+import com.example.mydukaan.activity.ginnyActivity.ginny_main_activity.GinnyHomeActivity;
 import com.example.mydukaan.activity.ginnyActivity.signup.SignupActivity;
-import com.example.mydukaan.activity.ginnyActivity.splash.SplashActivity;
 import com.example.mydukaan.adapter.CountryAdapter;
 import com.example.mydukaan.databinding.ActivityWelcomeBinding;
 import com.example.mydukaan.ginnymodal.country.CountryItem;
 import com.example.mydukaan.ginnymodal.signin.SignInGinney;
-import com.example.mydukaan.other.LocalHelper;
 import com.example.mydukaan.other.NetworkCheck;
 import com.example.mydukaan.other.SessionManage;
 import com.example.mydukaan.service.ApiGinnyClient;
@@ -70,7 +68,7 @@ public class WelcomeActivity extends AppCompatActivity implements EasyPermission
         binding = ActivityWelcomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().hide();
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
 
         sessionManage = new SessionManage(this);
@@ -110,10 +108,15 @@ public class WelcomeActivity extends AppCompatActivity implements EasyPermission
         });
 
         binding.SignInBtn.setOnClickListener(v -> {
-            if (new NetworkCheck().haveNetworkConnection(this)) {
-                if (validation()) SignIN();
-            }
-//            Toast.makeText(this, , Toast.LENGTH_SHORT).show();
+
+            startActivity(new Intent(WelcomeActivity.this, GinnyHomeActivity.class));
+
+//            if (new NetworkCheck().haveNetworkConnection(this)) {
+//                if (validation()) {
+//                    SignIN();
+//                }
+//            }
+
         });
 
 
@@ -136,7 +139,7 @@ public class WelcomeActivity extends AppCompatActivity implements EasyPermission
 
                     }
                 } else {
-                    Toast.makeText(WelcomeActivity.this, "Invalid Password! for  mobile", Toast.LENGTH_SHORT).show();
+
                 }
             }
 
@@ -158,7 +161,6 @@ public class WelcomeActivity extends AppCompatActivity implements EasyPermission
 
     private boolean NumberCheck(String number) {
         if (number.isEmpty()) {
-            Toast.makeText(this, "number empty", Toast.LENGTH_SHORT).show();
             binding.mobileNumber.setError(getResources().getString(R.string.field_required));
             binding.mobileNumber.setErrorEnabled(true);
             return false;

@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="All Order"
+        android:fontFamily="@font/lato_regular"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/GuidelineStart"
         app:layout_constraintTop_toTopOf="@+id/GuidelineTop" />
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Life Time"
+        android:fontFamily="@font/lato_regular"
         app:layout_constraintRight_toRightOf="@+id/GuidelineEnd"
         app:layout_constraintTop_toTopOf="@+id/ShippedOrdertxt" />
 
@@ -31,8 +33,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
-        android:background="@color/white"
-        android:visibility="gone"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@+id/GuidelineStart"
         app:layout_constraintRight_toRightOf="@+id/GuidelineEnd"
@@ -46,6 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
         app:layout_constraintVertical_bias=".30">
 
 

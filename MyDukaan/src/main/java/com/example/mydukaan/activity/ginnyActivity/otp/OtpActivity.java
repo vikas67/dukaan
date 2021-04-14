@@ -12,10 +12,11 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.mydukaan.R;
 import com.example.mydukaan.activity.DashboardActivity;
+import com.example.mydukaan.activity.ginnyActivity.document_upload.DocumentUploadActivity;
 import com.example.mydukaan.databinding.ActivityOtpBinding;
 import com.example.mydukaan.ginnymodal.verifyotp.Data;
 import com.example.mydukaan.ginnymodal.verifyotp.VerifyOtp;
@@ -54,8 +55,8 @@ public class OtpActivity extends AppCompatActivity implements TextWatcher {
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = ActivityOtpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         apiGinnyClient = ApiGinnyClient.getClient().create(MyGinnyInterface.class);
         sessionManage = new SessionManage(this);
@@ -65,8 +66,6 @@ public class OtpActivity extends AppCompatActivity implements TextWatcher {
         number = getIntent().getStringExtra("number");
         binding.numbers.setText(number);
 
-        Log.e(TAG, "onCreate: " + user_id);
-        Log.e(TAG, "onCreate: " + otp);
 
         conuter();
         binding.resendotp.setEnabled(false);
@@ -80,7 +79,9 @@ public class OtpActivity extends AppCompatActivity implements TextWatcher {
         });
 
         binding.button2.setOnClickListener(v -> {
-            if (new NetworkCheck().haveNetworkConnection(this)) {
+            startActivity(new Intent(this, DocumentUploadActivity.class));
+
+/*            if (new NetworkCheck().haveNetworkConnection(this)) {
 
                 String inputone = binding.otpEditTextOne.getText().toString();
                 String inputtwo = binding.otpEditTextTwo.getText().toString();
@@ -96,7 +97,7 @@ public class OtpActivity extends AppCompatActivity implements TextWatcher {
                 }
             } else {
                 Toast.makeText(OtpActivity.this, getResources().getString(R.string.check_internet), Toast.LENGTH_SHORT).show();
-            }
+            }*/
         });
 
         ActivityAction();

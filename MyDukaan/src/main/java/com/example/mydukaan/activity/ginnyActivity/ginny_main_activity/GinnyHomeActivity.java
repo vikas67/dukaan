@@ -2,6 +2,7 @@ package com.example.mydukaan.activity.ginnyActivity.ginny_main_activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -42,6 +43,9 @@ public class GinnyHomeActivity extends AppCompatActivity  implements NavigationV
         binding = ActivityGinnyHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().hide();
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         binding.navView.setNavigationItemSelectedListener(this);
         binding.appBarMain.bottomnav.getMenu().findItem(R.id.navigation_ginnyhome).setChecked(true);
         binding.appBarMain.bottomnav.setOnNavigationItemSelectedListener(item -> {
@@ -53,7 +57,8 @@ public class GinnyHomeActivity extends AppCompatActivity  implements NavigationV
                     startActivity(new Intent(this, GinneyMainActivity.class));
                     break;
                 case R.id.action_second_item:
-                    startActivity(new Intent(this, OrderActivity.class));
+                    startActivity(new Intent(this, OpenFragmentActivity.class).putExtra("action","order"));
+//                    startActivity(new Intent(this, OrderActivity.class));
                     break;
                 case R.id.action_fifth_item:
                     startActivity(new Intent(this, DashboardActivity.class));
@@ -81,13 +86,14 @@ public class GinnyHomeActivity extends AppCompatActivity  implements NavigationV
 
     @Override
     public void onBackPressed() {
-        if (state) {
-            super.onBackPressed();
-            return;
-        }
-        this.state = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
-        new Handler().postDelayed(() -> state=false, 2000);
+        super.onBackPressed();
+//        if (state) {
+//            super.onBackPressed();
+//            return;
+//        }
+//        this.state = true;
+//        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+//        new Handler().postDelayed(() -> state=false, 2000);
     }
 
     @Override
@@ -118,7 +124,8 @@ public class GinnyHomeActivity extends AppCompatActivity  implements NavigationV
                 startActivity(new Intent(this, OpenFragmentActivity.class).putExtra("action","language"));
                 break;
             case R.id.order:
-                startActivity(new Intent(this, OpenFragmentActivity.class).putExtra("action","order"));
+//                startActivity(new Intent(this, OpenFragmentActivity.class).putExtra("action","order"));
+                startActivity(new Intent(this, OrderActivity.class));
                 break;
             case R.id.document:
                 startActivity(new Intent(this, OpenFragmentActivity.class).putExtra("action","document"));

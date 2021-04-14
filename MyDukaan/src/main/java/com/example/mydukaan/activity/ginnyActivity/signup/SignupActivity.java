@@ -9,19 +9,17 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.mydukaan.R;
 import com.example.mydukaan.activity.ginnyActivity.otp.OtpActivity;
 import com.example.mydukaan.databinding.ActivitySignupBinding;
 import com.example.mydukaan.ginnymodal.signup.Data;
 import com.example.mydukaan.ginnymodal.signup.SignupGinney;
-import com.example.mydukaan.other.NetworkCheck;
 import com.example.mydukaan.other.SessionManage;
 import com.example.mydukaan.service.ApiGinnyClient;
 import com.example.mydukaan.service.MyGinnyInterface;
@@ -50,6 +48,8 @@ public class SignupActivity extends AppCompatActivity {
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         apiGinnyClient = ApiGinnyClient.getClient().create(MyGinnyInterface.class);
         sessionManage = new SessionManage(this);
 
@@ -64,11 +64,14 @@ public class SignupActivity extends AppCompatActivity {
         PrivacyPolicy();
 
         binding.SignupBtn.setOnClickListener(v -> {
-            if (new NetworkCheck().haveNetworkConnection(this)) {
-                if (validatiopn()) Signup();
-            } else {
-                Toast.makeText(SignupActivity.this, getResources().getString(R.string.check_internet), Toast.LENGTH_SHORT).show();
-            }
+            startActivity(new Intent(SignupActivity.this, OtpActivity.class));
+//            if (new NetworkCheck().haveNetworkConnection(this)) {
+//                if (validatiopn()) {
+//                    Signup();
+//                }
+//            } else {
+//                Toast.makeText(SignupActivity.this, getResources().getString(R.string.check_internet), Toast.LENGTH_SHORT).show();
+//            }
         });
 
     }
@@ -88,7 +91,7 @@ public class SignupActivity extends AppCompatActivity {
                         Toast.makeText(SignupActivity.this, response.body().getResult().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(SignupActivity.this, "Failed! Mobile is already in use!", Toast.LENGTH_SHORT).show();
+
                 }
             }
 

@@ -14,6 +14,7 @@
         android:src="@drawable/india_flag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
         tools:listitem="@layout/row_country_spinner" />
 
     <LinearLayout

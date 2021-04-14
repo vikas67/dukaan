@@ -56,7 +56,7 @@ public class OrderDashboardFragment extends Fragment implements OrderHeaderAdapt
     public void onStart() {
         super.onStart();
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
-        binding.headerRecyclerView.setAdapter(new OrderHeaderAdapter(getorderHeaderlist(), this));
+        binding.headerRecyclerView.setAdapter(new OrderHeaderAdapter(getorderHeaderlist(), this , requireContext()));
         lodaFragment(new AllFragment());
 
     }

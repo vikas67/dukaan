@@ -34,6 +34,7 @@ public class OpenFragmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityOpenFragmentBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         transaction = getSupportFragmentManager().beginTransaction();
         setFragment(getIntent().getStringExtra("action"));
         transaction.addToBackStack(null);
