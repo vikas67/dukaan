@@ -12,7 +12,7 @@ import com.example.mydukaan.R;
 public class CustomActionBar {
 
     public CustomActionBar(Activity activity, String s) {
-        ((AppCompatActivity) activity).getSupportActionBar().setDisplayShowCustomEnabled(true);
+        ((AppCompatActivity) activity).getSupportActionBar().setDisplayShowCustomEnabled(false);
         ((AppCompatActivity) activity).getSupportActionBar().setDisplayShowTitleEnabled(false);
         LayoutInflater inflator = LayoutInflater.from(activity);
         View v = inflator.inflate(R.layout.actionbar_layout, null);
