@@ -21,8 +21,6 @@ import org.jetbrains.annotations.NotNull;
 public class DashBoard extends Fragment {
 
 
-    private String mParam1;
-    private String mParam2;
     ImageView img_back;
     TextView txt_id,txt_name;
     SessionManager sessionManager;
@@ -41,12 +39,7 @@ public class DashBoard extends Fragment {
         img_back=v.findViewById(R.id.img_back);
         txt_id=v.findViewById(R.id.txt_id);
         txt_name=v.findViewById(R.id.txt_name);
-        img_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getFragmentManager().popBackStack();
-            }
-        });
+        img_back.setOnClickListener(v1 -> getFragmentManager().popBackStack());
         sessionManager =new SessionManager();
 
         if(sessionManager.getPreferences(getActivity(),"login_id") !=null && sessionManager.getPreferences(getActivity(),"name") !=null){

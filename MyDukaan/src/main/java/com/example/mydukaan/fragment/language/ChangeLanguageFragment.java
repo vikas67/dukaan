@@ -30,14 +30,13 @@ public class ChangeLanguageFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        new CustomActionBar(getActivity(), getString(R.string.title_language));
+//        new CustomActionBar(getActivity(), getString(R.string.title_language));
 
     }
 
     @Override
     public void onStart() {
         super.onStart();
-//        new DashboardActivity().HideBottomNavigation();
     }
 
 }

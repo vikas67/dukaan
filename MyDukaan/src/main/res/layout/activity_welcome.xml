@@ -172,7 +172,7 @@
             android:fontFamily="@font/montserrat_semibold"
             android:paddingTop="12dp"
             android:paddingBottom="12dp"
-            android:text="Next"
+            android:text="Login"
             android:textColor="@color/white" />
 
     </LinearLayout>

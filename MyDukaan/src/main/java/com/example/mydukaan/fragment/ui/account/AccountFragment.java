@@ -153,7 +153,7 @@ public class AccountFragment extends Fragment {
         dialog.setContentView(R.layout.dialog_supportlayout);
         ImageView close = dialog.findViewById(R.id.close);
         LinearLayout liveChat = dialog.findViewById(R.id.liveChat);
-        liveChat.setOnClickListener(v -> {startActivity(new Intent(requireContext() , Login.class));});
+//        liveChat.setOnClickListener(v -> {startActivity(new Intent(requireContext() , Login.class));});
         close.setOnClickListener(v -> dialog.dismiss());
         dialog.show();
     }

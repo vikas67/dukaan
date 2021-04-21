@@ -87,25 +87,26 @@ public class MarketRepo {
 
     private void fakeListTopDeals() {
         List<TopDealsList> topDealsLists = new ArrayList<>();
-        topDealsLists.add(new TopDealsList("https://reapp.com.gh/wp-content/uploads/2018/03/nk.jpeg", "iphone 6", 10));
+
         topDealsLists.add(new TopDealsList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png", "iphone 10", 10));
-        topDealsLists.add(new TopDealsList("https://reapp.com.gh/wp-content/uploads/2018/03/nk.jpeg", "mobile", 10));
+        topDealsLists.add(new TopDealsList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png", "iphone 11", 10));
+        topDealsLists.add(new TopDealsList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png", "iphone 11", 10));
         topDealsLists.add(new TopDealsList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png", "iphone 11", 10));
         topdeal.setValue(topDealsLists);
     }
 
     private void fakeListOffer() {
         List<OfferList> offerLists = new ArrayList<>();
-        offerLists.add(new OfferList("https://reapp.com.gh/wp-content/uploads/2018/03/nk.jpeg", "Mobile", "543"));
-        offerLists.add(new OfferList("https://reapp.com.gh/wp-content/uploads/2018/03/nk.jpeg", "Mobile", "6534"));
         offerLists.add(new OfferList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png", "Laptop", "2344"));
+        offerLists.add(new OfferList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png", "Laptop", "6532"));
+        offerLists.add(new OfferList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png", "Laptop", "6532"));
         offerLists.add(new OfferList("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png", "Laptop", "6532"));
         offerlist.setValue(offerLists);
     }
 
     private void fakeListGadgets() {
         List<Gadgets> gadgetsLists = new ArrayList<>();
-        gadgetsLists.add(new Gadgets("https://reapp.com.gh/wp-content/uploads/2018/03/nk.jpeg"));
+        gadgetsLists.add(new Gadgets("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png"));
         gadgetsLists.add(new Gadgets("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png"));
         gadgetsLists.add(new Gadgets("https://purepng.com/public/uploads/large/purepng.com-laptop-notebooklaptopsnotebooknotebook-computerclamshell-17015283548647iqlh.png"));
         gadgetsList.setValue(gadgetsLists);

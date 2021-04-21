@@ -77,7 +77,7 @@ public class MarketFragment extends Fragment {
 
         mViewModel.returnMobilebrandList().observe(requireActivity(), mobileBrands -> {
             binding.MobileBrandRecyclerView.setAdapter(new MobileBrandAdapter(mobileBrands));
-            binding.MobileBrandRecyclerView.addItemDecoration(new SpacesItemDecoration(10));
+//            binding.MobileBrandRecyclerView.addItemDecoration(new SpacesItemDecoration(10));
         });
 
 

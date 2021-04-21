@@ -8,11 +8,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mydukaan.R;
-import com.google.android.material.textview.MaterialTextView;
 
 public class CustomActionBar {
 
-    public   CustomActionBar(Activity activity, String s) {
+    public  CustomActionBar(Activity activity, String s) {
         ((AppCompatActivity) activity).getSupportActionBar().setDisplayShowCustomEnabled(false);
         ((AppCompatActivity) activity).getSupportActionBar().setDisplayShowTitleEnabled(false);
         LayoutInflater inflator = LayoutInflater.from(activity);

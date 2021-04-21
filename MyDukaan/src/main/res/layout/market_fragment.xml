@@ -49,7 +49,7 @@
             app:sliderScrollTimeInSec="1"
             app:sliderStartAutoCycle="true" />
 
-
+        <!--   Remove   -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/topDealLayout"
             android:layout_width="0dp"
@@ -57,6 +57,7 @@
             android:layout_marginTop="3dp"
             android:background="@drawable/top_deal_background"
             android:orientation="vertical"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageSlider">
@@ -110,6 +111,8 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+        <!--     3   -->
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/OfferLayput"
             android:layout_width="match_parent"
@@ -118,7 +121,7 @@
             android:background="@drawable/top_deal_background"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/topDealLayout">
+            app:layout_constraintTop_toBottomOf="@+id/AccessLayout">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/OfferProductRecyclerView"
@@ -155,6 +158,8 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+        <!--    2    -->
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/AccessLayout"
             android:layout_width="match_parent"
@@ -163,7 +168,7 @@
             android:background="@drawable/top_deal_background"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/OfferLayput">
+            app:layout_constraintTop_toBottomOf="@+id/MobileBrand_Layout">
 
             <TextView
                 android:id="@+id/title1"
@@ -208,6 +213,8 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+        <!--     4   -->
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/gadgetslayout"
             android:layout_width="match_parent"
@@ -216,7 +223,7 @@
             android:background="@drawable/top_deal_background"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/AccessLayout">
+            app:layout_constraintTop_toBottomOf="@+id/OfferLayput">
 
 
             <TextView
@@ -267,6 +274,8 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+        <!--        1      -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/MobileBrand_Layout"
             android:layout_width="match_parent"
@@ -276,7 +285,7 @@
             android:background="@drawable/top_deal_background"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gadgetslayout">
+            app:layout_constraintTop_toBottomOf="@+id/imageSlider">
 
 
             <TextView
@@ -305,8 +314,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/mobile_brandtitle"
-                app:spanCount="2"
-                tools:listitem="@layout/row_mobile_brands" />
+                app:spanCount="2" />
 
 
             <TextView
